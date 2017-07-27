@@ -1,0 +1,31 @@
+<p><a href="/dashboard">Go To Polls</a></p>
+<div *ngIf="poll">
+  <p>{{ poll.poll }}</p>
+<table>
+  <tr>
+    <th>Option</th>
+    <th>Current Count of Votes</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>{{ poll.option1.option }}</td>
+    <td>{{ poll.option1.count}}</td>
+    <td><button type="button" ng-click="update_poll1()">Vote</button></td>
+  </tr>
+  <tr>
+    <td>{{ poll.option2.option }}</td>
+    <td>{{ poll.option2.count}}</td>
+    <td><button onclick="update_poll2()">Vote</button></td>
+  </tr>
+  <tr>
+    <td>{{ poll.option2.option }}</td>
+    <td>{{ poll.option2.count}}</td>
+    <td><button onclick="update_poll3()">Vote</button></td>
+  </tr>
+  <tr>
+    <td>{{ poll.option2.option }}</td>
+    <td>{{ poll.option2.count}}</td>
+    <td><button onclick="update_poll4()">Vote</button></td>
+  </tr>
+</table>
+</div>
